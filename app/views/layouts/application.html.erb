@@ -6,17 +6,18 @@
   <meta name="theme-color" content="#000000">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <%= csrf_meta_tags %>
-  <title>Jets App</title>
+  <title>Jets Task App</title>
   <%= javascript_pack_tag "application" %>
   <%= stylesheet_pack_tag "theme" %>
   <link rel="shortcut icon" href="<%= favicon_path %>">
+  <link rel="stylesheet" href="/stylesheets/tailwind-build.css">
 </head>
 <body>
 <section class="starter">
-  <div class="container">
+  <div class="mx-auto w-1/2 container">
     <div class="row">
       <div class="col-md-9 content-body">
-        <% if @title %><h1><%= @title %></h1><% end %>
+        <% if @title %><h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600"><%= @title %></h1><% end %>
         <%= yield %>
       </div>
     </div>

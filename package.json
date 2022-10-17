@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "dev": "tailwindcss -c config/tailwind.config.js -i ./app/assets/stylesheets/tailwind.css -o ./public/stylesheets/tailwind-build.css --watch",
+    "build": "NODE_ENV=production tailwindcss -c config/tailwind.config.js -i ./app/assets/stylesheets/tailwind.css -o ./public/stylesheets/tailwind-build.css --minify"
+  },
   "dependencies": {
     "@rails/ujs": "^7.0.4",
     "@rails/webpacker": "5.2.1",
@@ -9,7 +13,9 @@
     "postcss-cssnext": "^3.1.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^4.11.1"
+    "@tailwindcss/forms": "^0.3.4",
+    "webpack-dev-server": "^4.11.1",
+    "tailwindcss": "^2.2.19"
   },
   "private": true
 }
