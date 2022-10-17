@@ -1,11 +1,15 @@
-# Jets Project
+# Simple CRUD - Ruby on Jets
 
-This README would normally document whatever steps are necessary to get the application up and running.
+Versions:
+* Ruby 2.7.2
+* Node v14.20.1
 
-Things you might want to cover:
-
-* Dependencies
-* Configuration
-* Database setup
-* How to run the test suite
-* Deployment instructions
+Run:
+```sh
+bundle install
+npm install
+jets db:create db:migrate
+jets server
+```
+---
+> Obs.: Need AWS credentials
